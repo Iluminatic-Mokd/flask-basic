@@ -32,19 +32,19 @@ def user(username):
 def addition(a,b):
     return f'<h1>{a} + {b} = {a+b}</h1>'
 
-#Subtraction
-@app.route('/calculator/Subtraction/<int:a>/<int:b>')
+# Subtraction
+@app.route('/calculator/subtraction/<int:a>/<int:b>')
 def subtraction(a,b):
     return f'<h1>{a} - {b} = {a-b}</h1>'
 
-#Mutiple
-@app.route('/calculator/Mutiple/<int:a>/<int:b>')
+# Mutiple
+@app.route('/calculator/sutiple/<int:a>/<int:b>')
 def mutiple(a,b):
     return f'<h1>{a} * {b} = {a*b}</h1>'
 
-#Devide
-@app.route('/calculator/Devide/<int:a>/<int:b>')
-def mutiple(a,b):
+# Devide
+@app.route('/calculator/devide/<int:a>/<int:b>')
+def devide(a,b):
     return f'<h1>{a} / {b} = {a/b}</h1>'
 
 @app.route('/secretkey/<uuid:sk>')
